@@ -31,12 +31,12 @@
 	function mylogin(){
 
 		$("#qalat").html('');
-		$(".khata").html('');
+		$(".khata").html('اندکی صبر باید...');
 
 		var myuser = $("#user").val();
 		var mypass = $("#pass").val();
 
-		if (!myuser || !mypass) {$("#qalat").html('جاها خالی رو پر کنید لطفا!!!'); return;}
+		if (!myuser || !mypass) {$("#qalat").html('جاها خالی رو پر کنید لطفا!!!'); $(".khata").html(''); return;}
 
 		$.ajax({
 			type : 'POST',
@@ -47,6 +47,7 @@
 			success : function(data){
 				if (data.ok && data.ok == true) 
 				{
+					$(".khata").html('');
 					$(".container").html('با موفقیت وارد شدید...<br>');
 					sessionStorage.setItem("varqauser", myuser);
 					sessionStorage.setItem("varqapass", mypass);
