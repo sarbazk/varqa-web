@@ -35,6 +35,7 @@ body{
   direction    : ltr;
   position     : absolute;
   left         : 0;
+  bottom       : 0; 
   padding      : 0.6em;
   max-width    : 3.3em;
   max-height   : 3.3em;
