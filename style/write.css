@@ -66,7 +66,7 @@ object{
 button{
   font-family: by;
 }
-input[type=text]{
+textarea{
   font-family     : Ubuntu, by, OpenSans, sans-serif;
   font-size       : 100%;
   font-weight     : 100;
@@ -79,6 +79,7 @@ input[type=text]{
   outline         : none;
   direction       : rtl;
   text-align      : right;
+  height          : 1.5em;
 }
 #mess{
   width: 87% !important;
@@ -171,6 +172,7 @@ input[type=text]{
   outline         : none;
   height          : 3.2em;
   color           : #f5f5f5;
+  float           : left;
 }
 .button:hover{
   background-color: rgba(90,173,173,0.5);
